@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prerna Gayakwad - Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "zvaf6dI_DA4kkfGgd",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">PG</div>
+        <nav class="nav">
+            <ul class="list">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="contact-link">Contact Me</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="status">
+            <div class="dot"></div>
+            <span>Available for opportunities</span>
+        </div>
+        <div class="floating-circle"></div>
+        <div class="intro-section">
+            <div class="intro-text">
+                <div class="text">
+                    <p class="gradient-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="sparkles-icon">
+                            <path
+                                d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+                            </path>
+                            <path d="M20 3v4"></path>
+                            <path d="M22 5h-4"></path>
+                            <path d="M4 17v2"></path>
+                            <path d="M5 18H3"></path>
+                        </svg>
+                        Hi, I'm
+                    <h1>Prerna <span><br>Gayakwad</span></h1>
+                    <h3 class="typing-animation">Full Stack Java Developer</h3>
+                    </p>
+                </div>
+                <div class="para">
+                    <p>
+                        I am a <span class="highlight">B.Tech Computer Science graduate</span> passionate about Java
+                        development, with hands-on experience in frontend and backend technologies.
+                        I've built projects like weather apps, real-time chat apps, and am currently developing an
+                        online
+                        placement preparation platform.
+                    </p>
+                </div>
+
+                <div class="stats-cards">
+                    <div class="card">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-code text-primary">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h2>3+</h2>
+                        <p>Projects Completed</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-zap text-primary">
+                                <path
+                                    d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h2>10+</h2>
+                        <p>Technologies</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-sparkles text-primary">
+                                <path
+                                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+                                </path>
+                                <path d="M20 3v4"></path>
+                                <path d="M22 5h-4"></path>
+                                <path d="M4 17v2"></path>
+                                <path d="M5 18H3"></path>
+                            </svg>
+                        </div>
+                        <h2>4+</h2>
+                        <p>Years Learning</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro-image">
+                <img src="mee1.png" alt="Prerna Gayakwad">
+                <div class="location-badge">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-map-pin text-primary">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                            </path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg> India
+                    <div class="floating-decor"></div>
+                    </p>
+                </div>
+                <div class="experience-badge">
+                    <p>4+<br><span>Years</span></p>
+                </div>
+                <div class="clock-badge" id="liveClock">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-calendar text-primary">
+                        <path d="M8 2v4"></path>
+                        <path d="M16 2v4"></path>
+                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                        <path d="M3 10h18"></path>
+                    </svg>
+                    <div class="floating-circle"></div>
+                    <span id="time">00:00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="connect">
+            <div class="action-buttons">
+                <a href="#portfolio" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-code text-primary">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>View My Work
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-arrow-right group-hover:translate-x-1 transition-transform duration-300"
+                        data-lov-id="src/components/sections/HeroSection.tsx:113:14" data-lov-name="ArrowRight"
+                        data-component-path="src/components/sections/HeroSection.tsx" data-component-line="113"
+                        data-component-file="HeroSection.tsx" data-component-name="ArrowRight"
+                        data-component-content="%7B%22className%22%3A%22group-hover%3Atranslate-x-1%20transition-transform%20duration-300%22%7D">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg></a>
+                <a href="#contact" class="btnbtn-outline-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-coffee">
+                        <path d="M10 2v2"></path>
+                        <path d="M14 2v2"></path>
+                        <path
+                            d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1">
+                        </path>
+                        <path d="M6 2v2"></path>
+                    </svg> Let's Connect</a>
+                <a href="PrernaGayakwad_2025(1).pdf" target="_blank" class="btn btn-outline">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-download">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" x2="12" y1="15" y2="3"></line>
+                    </svg> Resume</a>
+            </div>
+            <p style="margin-left: 77px; color: #838080; font-size: 15px;">Connect with me</p>
+            <div class="connect-me">
+                <a href="https://github.com/Prerna-251" target="_blank" class="connect-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-github group-hover:scale-110 transition-transform duration-300">
+                        <path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                        </path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                    GitHub<span><br>15+repositories</span>
+                </a>
+                <a href="https://www.linkedin.com/in/prerna-gayakwad-061663235/" target="_blank" class="connect-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-linkedin group-hover:scale-110 transition-transform duration-300">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect width="4" height="12" x="2" y="9"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    LinkedIn<span><br>500+ connections</span>
+                </a>
+                <a href="prernagayakwad2020@gmail.com" class="connect-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-mail group-hover:scale-110 transition-transform duration-300">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                    Email<span><br>Always open</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="abSection">
+        <h1>About <span> Me</span></h1>
+        <p>Passionate about creating efficient, scalable solutions through code</p>
+        <div class="about-content">
+            <div class="education">
+                <h2><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="graduation-cap-icon">
+                        <path
+                            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                        </path>
+                        <path d="M22 10v6"></path>
+                        <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </svg>Education</h2>
+                <div class="abcard">
+                    <div class="edu-card">
+                        <div class="edu-header">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="graduation-cap-icon">
+                                    <path
+                                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                    </path>
+                                    <path d="M22 10v6"></path>
+                                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                                </svg>
+                            </div>
+                            <h3>B.Tech in Computer Science and Engineering</h3>
+                        </div>
+                        <div class="div">
+                            <p>Sushila Devi Bansal College of Engineering</p>
+                            <span>2021-2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="graduation-cap-icon">
+                                <path
+                                    d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                </path>
+                                <path d="M22 10v6"></path>
+                                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                            </svg>
+                        </div>
+                        <h3>Higher Secondary Education</h3>
+                    </div>
+                    <p>Shri Cloth Market Girls Higher Secondary School</p>
+                    <span>2021</span>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="graduation-cap-icon">
+                                <path
+                                    d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                </path>
+                                <path d="M22 10v6"></path>
+                                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                            </svg>
+                        </div>
+                        <h3>Secondary Education</h3>
+                    </div>
+                    <p>Gurukul Vidhyadham High School</p>
+                    <span>2019</span>
+                </div>
+            </div>
+
+            <div class="skills-certifications">
+                <div class="skills">
+                    <h2><span>&lt;/&gt;</span>Skills & Expertise</h2>
+                    <div class="skills-list">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Git</span>
+                        <span>Servlet</span>
+                        <span>JSP</span>
+                        <span>MySQL</span>
+                        <span>API Integration</span>
+                    </div>
+                </div>
+
+                <div class="certifications">
+                    <h2>Certifications</h2>
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-award text-primary">
+                                    <path
+                                        d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                                    </path>
+                                    <circle cx="12" cy="8" r="6"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <h4>Data Structures and Algorithms using Java</h4>
+                        <p>NPTEL</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-xml text-primary">
+                                    <path d="m18 16 4-4-4-4"></path>
+                                    <path d="m6 8-4 4 4 4"></path>
+                                    <path d="m14.5 4-5 16"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h4>Java Certificate and 5-star Java badge</h4>
+                        <p>HackerRank</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="abpara">
+            <p>
+                I'm passionate about everything that has to do with Digital Development and Software Engineering. I
+                enjoy working with agencies and enthusiastic people who want to solve problems through beautiful design
+                and experiences. My goal is to build robust, scalable applications that make a real difference in
+                people's lives.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="servSection">
+        <div class="serve">
+            <h1>Services<span>I Offer</span></h1>
+            <p>Transforming ideas into powerful digital solutions through clean code and innovative thinking</p>
+        </div>
+
+        <div class="serv-content">
+            <div class="serv-card">
+                <div class="serv-header">
+                    <div class="card1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-code text-primary">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <h1>Java Development</h1>
+                        <p>
+                            Building robust backend applications using Java, Spring Boot, and enterprise-grade
+                            frameworks
+                            for scalable solutions.
+                        </p>
+                        <ul class="servList">
+                            <li><span>Spring Boot Applications</span></li>
+                            <li><span>RESTful APIs</span></li>
+                            <li><span>Microservices</span></li>
+                            <li><span>Enterprise Solutions</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-globe text-primary">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                </svg>
+                <h1>Full Stack Development</h1>
+                <p>
+                    Creating complete web applications with modern frontend technologies and powerful backend systems.
+                </p>
+                <ul class="servList">
+                    <li><span>Frontend Development</span></li>
+                    <li><span>Backend Integration</span></li>
+                    <li><span>Database Design</span></li>
+                    <li><span>API Development</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="serv-content">
+            <div class="card3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-database text-primary">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                    <path d="M3 12A9 3 0 0 0 21 12"></path>
+                </svg>
+                <h1>Backend Solutions</h1>
+                <p>
+                    Designing and implementing efficient server-side architecture, databases, and API integrations.
+                </p>
+                <ul class="servList">
+                    <li><span>Database Optimization</span></li>
+                    <li><span>Server Architecture</span></li>
+                    <li><span>API Integration</span></li>
+                    <li><span>Performance Tuning</span></li>
+                </ul>
+            </div>
+
+            <div class="card4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-smartphone text-primary">
+                    <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                    <path d="M12 18h.01"></path>
+                </svg>
+                <h1>Web Applications</h1>
+                <p>
+                    Developing responsive, user-friendly web applications with modern technologies and best practices.
+                </p>
+                <ul class="servList">
+                    <li><span>Responsive Design</span></li>
+                    <li><span>User Experience</span></li>
+                    <li><span>Modern Frameworks</span></li>
+                    <li><span>Cross-platform</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="serv-end">
+            <a href="#contact">Get Started</a>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="portSection">
+            <h1>My <span>Portfolio</span></h1>
+            <p>Showcasing my recent projects and technical expertise through innovative <br> solutions</p>
+        </div>
+        <div class="work-content">
+            <div class="work-card">
+                <div class="wcard1">
+                    <div class="icon-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-cloud text-primary">
+                            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                        </svg>
+                    </div>
+                    <h1>Weather Application</h1>
+                    <p>
+                        Real-time weather forecast based on city input, featuring live digital and analog clocks with an
+                        intuitive user interface.
+                    </p>
+                    <p>Key Features :</p>
+                    <ul class="workList">
+                        <li><span>Real-time weather data</span></li>
+                        <li><span>Live digital & analog clocks</span></li>
+                        <li><span>City-based search</span></li>
+                        <li><span>Responsive design</span></li>
+                    </ul>
+                    <div class="wText">
+                        <p>Technologies : </p>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <Span>JavaScript</Span>
+                        <span>Java</span>
+                        <span>Servlet</span>
+                        <span>JSP</span><br>
+                        <span>OpenWeather API</span>
+                    </div>
+                    <div class="wsym">
+                        <a href="https://github.com/Prerna-251?tab=repositories" target="_blank" class="connect-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-github group-hover:scale-110 transition-transform duration-300">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                </path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                            Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="wcard2">
+                    <div class="icon-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-message-circle text-primary">
+                            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                        </svg>
+                    </div>
+                    <h1>Real-time Chat Application</h1>
+                    <p>
+                        A dynamic communication platform enabling real-time messaging between users using socket
+                        programming for instant connectivity.
+                    </p>
+                    <p>Key Features :</p>
+                    <ul class="workList">
+                        <li><span>Real-time messaging</span></li>
+                        <li><span>Socket programming</span></li>
+                        <li><span>Multi-user support</span></li>
+                        <li><span>Instant connectivity</span></li>
+                    </ul>
+                    <div class="wText">
+                        <p>Technologies : </p>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <Span>JavaScript</Span>
+                        <span>Java</span>
+                        <span>Servlet</span><br>
+                        <span>Socket Programming</span>
+                    </div>
+                    <div class="wsym">
+                        <a href="https://github.com/Prerna-251?tab=repositories" target="_blank" class="connect-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-github group-hover:scale-110 transition-transform duration-300">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                </path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                            Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="wcard3">
+                    <div class="icon-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-calculator text-primary">
+                            <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                            <line x1="8" x2="16" y1="6" y2="6"></line>
+                            <line x1="16" x2="16" y1="14" y2="18"></line>
+                            <path d="M16 10h.01"></path>
+                            <path d="M12 10h.01"></path>
+                            <path d="M8 10h.01"></path>
+                            <path d="M12 14h.01"></path>
+                            <path d="M8 14h.01"></path>
+                            <path d="M12 18h.01"></path>
+                            <path d="M8 18h.01"></path>
+                        </svg>
+                    </div>
+                    <h1>Calculator with Jokes</h1>
+                    <p>
+                        An entertaining calculator that displays random jokes alongside mathematical operations and
+                        stores calculation history using cookies.
+                    </p>
+                    <p>Key Features :</p>
+                    <ul class="workList">
+                        <li><span>Mathematical operations</span></li>
+                        <li><span>Random joke display</span></li>
+                        <li><span>Calculation history</span></li>
+                        <li><span>Cookie-based storage</span></li>
+                    </ul>
+                    <div class="wText">
+                        <p>Technologies : </p>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <Span>JavaScript</Span>
+                        <span>Java</span>
+                        <span>Servlet</span>
+                        <span>JSP</span>
+                    </div>
+                    <div class="wsym">
+                        <a href="https://github.com/Prerna-251?tab=repositories" target="_blank" class="connect-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-github group-hover:scale-110 transition-transform duration-300">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                </path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-para">
+                <h2>Currently Working On</h2>
+                <p>PrepBix, An online placement preparation platform inspired by IndiaBIX, featuring comprehensive
+                    question banks, practice tests, and performance analytics to help students excel in technical
+                    interviews and competitive exams.</p>
+                <div class="work-list">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>React</span>
+                    <span>MySQL</span>
+                    <span>Rest APIs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="cont-section">
+            <h1><span>Let's </span>Contact</h1>
+            <p>Ready to collaborate or discuss new opportunities? I'd love to hear from you!</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contact-form">
+                    <div class="form-head">
+                        <div class="form-row1">
+                            <label for="from_name">Name</label>
+                            <input type="text" id="name" name="from_name" placeholder="Your name" required />
+                        </div>
+                        <div class="form-row2">
+                            <label for="from_email">Email</label>
+                            <input type="email" id="email" name="from_email" placeholder="your.email@example.com"
+                                required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project or idea..."
+                            required></textarea>
+                    </div>
+                    <button type="button" onclick="sendEmail()">Send Message</button>
+                </form>
+                <div id="notification" class="notification"></div>
+            </div>
+
+            <div class="contact-info">
+                <div class="cont1">
+                    <h3>Get in Touch</h3>
+                    <a href="mailto:prernagayakwad2020@gmail.com">
+                        <div class="cont-email">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-mail text-primary">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                            </div>
+                            <h4>Email</h4>
+                            <p>prernagayakwad2020@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="tel:+918817170251">
+                        <div class="cont-phone">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-phone text-primary">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4>Phone</h4>
+                            <p>+91 8817170251</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="online-section">
+                    <h2>Find Me Online</h2>
+                    <div class="online-links">
+                        <a href="https://github.com/Prerna-251" target="_blank" class="online-item">
+                            <div class="icon1 github">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-github text-primary">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                    </path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                            </div>
+                            <div class="online-text">
+                                <p class="title">GitHub</p>
+                                <p class="subtitle">Prerna-251</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/prerna-gayakwad-061663235/" target="_blank"
+                            class="online-item">
+                            <div class="icon1 linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-linkedin text-blue-600">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect width="4" height="12" x="2" y="9"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="online-text">
+                                <p class="title">LinkedIn</p>
+                                <p class="subtitle">prerna-gayakwad</p>
+                            </div>
+                        </a>
+
+                        <a href="https://leetcode.com/Prerna_12/" target="_blank" class="online-item">
+                            <div class="icon1 code">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code text-gray-800">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <div class="online-text">
+                                <p class="title">LeetCode</p>
+                                <p class="subtitle">Prerna_12</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.hackerrank.com/prernagayakwad21" target="_blank" class="online-item">
+                            <div class="icon1 trophy">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-trophy text-yellow-600">
+                                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                                    <path d="M4 22h16"></path>
+                                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                                </svg>
+                            </div>
+                            <div class="online-text">
+                                <p class="title">HackerRank</p>
+                                <p class="subtitle">prernagayakwad21</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collab">
+                    <h3>Ready to Collaborate?</h3>
+                    <p>Whether you have a project in mind or just want to say hello, I'm always excited to connect with
+                        fellow developers and potential collaborators.</p>
+                    <a href="mailto:prernagayakwad2020@gmail.com"
+                        class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-primary-foreground px-6 py-2 rounded-lg font-medium transition-all duration-300 glow-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        Start a Conversation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <footer class="footer">
+        <div class="line"><hr></div>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Prerna Gayakwad</h2>
+                <p>Full Stack Java Developer passionate about creating innovative solutions through clean code and
+                    modern technologies.</p>
+
+                <div class="social-icons">
+                    <a href="https://github.com/Prerna-251" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-github text-primary">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                            </path>
+                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/prerna-gayakwad-061663235/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-linkedin text-blue-600">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect width="4" height="12" x="2" y="9"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+
+                    <a href="mailto:prernagayakwad2020@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="footer-title">Quick Linkes</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 class="footer-title">Get in Touch</h4>
+                <div class="footer-cont">
+                <h4>Email:</h4>
+                <p>prernagayakwad2020@gmail.com</p>
+                <h4>Phone:</h4>
+                <p>+91 8817170251</p>
+                <h4>Location:</h4>
+                <p>India</p>
+                </div>
+            </div>
+        </div>
+        <div class="hr"><hr></div>
+        <div class="footer-bottom">
+            <p>© 2025 Prerna Gayakwad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

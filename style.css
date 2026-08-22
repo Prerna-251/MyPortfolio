@@ -1670,51 +1670,953 @@ footer {
     color: #666;
     margin-left: 45px;
 }
+/* =========================================================
+   MOBILE RESPONSIVE FIX
+   ========================================================= */
 
 @media (max-width: 768px) {
-    .container {
-        padding: 10px;
-        font-size: 14px;
+
+    /* ---------- GLOBAL ---------- */
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        padding-top: 70px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* ---------- NAVBAR ---------- */
+
+    .header {
+        height: 70px;
+        padding: 0 16px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid #e8e8e8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0;
+        padding: 0;
+        font-size: 22px;
+        z-index: 1002;
+    }
+
+    .nav {
+        position: static;
+        width: auto;
+        display: flex;
+        background: transparent;
+        backdrop-filter: none;
+        gap: 0;
+        z-index: auto;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .contact-link {
+        margin: 0;
+        padding: 9px 15px;
+        border-radius: 8px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .status {
+        display: none;
+    }
+
+
+    /* =====================================================
+       HOME
+       ===================================================== */
+
+    #home {
+        padding-top: 30px;
+        margin-top: 0;
+        min-height: auto;
+        overflow: hidden;
+    }
+
+    .intro-section {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 25px 18px 45px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .intro-text {
+        width: 100%;
+        min-width: 0;
+        text-align: center;
+        order: 1;
+    }
+
+    .intro-text h1 {
+        font-size: 42px;
+        line-height: 1.1;
+        margin: 0 0 12px;
+    }
+
+    .intro-text h1 span {
+        font-size: 42px;
+    }
+
+    .intro-text h3 {
+        font-size: 18px;
+        margin: 0 0 15px;
+    }
+
+    .typing-animation {
+        max-width: 52%;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        height: 27px;
+        margin: 0 auto 15px;
+        white-space: nowrap;
+    }
+
+    .para {
+        width: 100%;
+    }
+
+    .para p {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 14px;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    /* ---------- STATS ---------- */
+
+    .stats-cards {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .card {
+        min-width: 0;
+        padding: 8px 4px;
+        border-radius: 10px;
+    }
+
+    .card .icon svg {
+        margin-top: 5px;
+        padding: 6px;
+    }
+
+    .card h2 {
+        font-size: 17px;
+        margin: 5px 0;
+    }
+
+    .card p {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    /* ---------- IMAGE ---------- */
+
+    .intro-image {
+        width: 100%;
+        max-width: 320px;
+        margin: 10px auto 0;
+        order: 2;
+    }
+
+    .intro-image img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 20px;
+        display: block;
+    }
+
+    /* Location badge */
+
+    .location-badge {
+        top: -12px;
+        right: -5px;
+        padding: 8px 10px;
+        border-radius: 10px;
+        z-index: 5;
+    }
+
+    .location-badge p {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Experience badge */
+
+    .experience-badge {
+        bottom: 55px;
+        left: -12px;
+        padding: 7px 10px;
+        border-radius: 10px;
+        z-index: 5;
+    }
+
+    /* ---------- CLOCK BADGE FIX ---------- */
+
+    .clock-badge {
+        position: absolute;
+        bottom: 12px;
+        right: -8px;
+
+        height: auto;
+        min-height: 38px;
+
+        padding: 7px 12px;
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 12px;
+        border-radius: 10px;
+
+        z-index: 10;
+    }
+
+    .clock-badge svg {
+        margin: 0 5px 0 0;
+        width: 15px;
+        height: 15px;
+    }
+
+    .clock-badge span {
+        position: static;
+        margin: 0;
+        bottom: auto;
+        display: inline-block;
+    }
+
+    .clock-badge .floating-circle {
+        position: absolute;
+        margin: 0;
+        left: -8px;
+        top: -8px;
+
+        width: 22px;
+        height: 22px;
+
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+
+    /* ---------- ACTION BUTTONS ---------- */
+
+    .action-buttons {
+        width: 100%;
+        max-width: 100%;
+        margin: 25px 0 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 11px 16px;
+        font-size: 13px;
+    }
+
+    /* ---------- SOCIAL LINKS ---------- */
+
+    .connect-me {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .connect-link {
+        padding: 8px 10px;
+        border-radius: 9px;
+    }
+
+    .connect-link span {
+        font-size: 11px;
+    }
+
+
+    /* =====================================================
+       ABOUT
+       ===================================================== */
+
+    #about {
+        padding-top: 45px;
+        margin-top: 0;
+        overflow: hidden;
+    }
+
+    #about h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        margin: 0 0 12px;
+        text-align: center;
+    }
+
+    #about h1 span {
+        font-size: 36px;
+    }
+
+    .abSection p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0 20px 25px;
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+        margin: 0;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .education,
+    .skills-certifications {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* ---------- EDUCATION ---------- */
+
+    .education h2,
+    .skills h2 {
+        font-size: 21px;
+        margin: 0 0 15px;
+    }
+
+    .edu-card {
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .edu-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .icon-container {
+        flex-shrink: 0;
+        padding: 5px;
+    }
+
+    .graduation-cap-icon {
+        padding: 7px;
+    }
+
+    .edu-card h3 {
+        font-size: 15px;
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    .edu-card p {
+        margin: 10px 0 5px 0;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .edu-card span {
+        display: block;
+        margin: 0;
+        font-size: 12px;
+    }
+
+
+    /* ---------- CERTIFICATIONS ---------- */
+
+    .cert-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin-bottom: 12px;
+        border-radius: 12px;
+    }
+
+    .cert-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .cert-header svg {
+        flex-shrink: 0;
+        padding: 8px;
+    }
+
+    .cert-card h4 {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .cert-card p {
+        margin: 9px 0 0 0;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+
+    /* ---------- SKILLS ---------- */
+
+    .skills-list {
+        width: 100%;
+        max-width: 100%;
+        justify-content: flex-start;
+        gap: 7px;
+    }
+
+    .skills-list span {
+        padding: 7px 11px;
+        font-size: 12px;
+    }
+
+    .abpara {
+        width: calc(100% - 32px);
+        max-width: none;
+        margin: 25px 16px 40px;
+        padding: 16px;
+    }
+
+    .abpara p {
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       SERVICES
+       ===================================================== */
+
+    #services {
+        padding-top: 45px;
+        margin-top: 0;
+    }
+
+    .servSection {
+        padding: 20px 16px 35px;
+    }
+
+    .serve h1 {
+        font-size: 36px;
+        margin: 0 0 12px;
+        text-align: center;
+    }
+
+    #services .serve h1 span {
+        font-size: 36px;
+    }
+
+    .serve p {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 1.6;
+        display: block;
+        text-align: center;
+    }
+
+    .serv-content {
+        width: 100%;
+        margin: 25px 0 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        width: 100%;
+        max-width: 100%;
+        padding: 17px;
+        border-radius: 14px;
+    }
+
+    .serv-content svg {
+        margin: 0 0 10px;
+        padding: 9px;
+    }
+
+    .card1 h1,
+    .card2 h1,
+    .card3 h1,
+    .card4 h1 {
+        font-size: 21px;
+        margin: 0 0 8px;
+    }
+
+    .card1 p,
+    .card2 p,
+    .card3 p,
+    .card4 p {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .servList {
+        padding-left: 20px;
+    }
+
+    .servList li {
+        font-size: 13px;
+        line-height: 1.7rem;
+        margin: 0;
+    }
+
+    .serv-end a {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 11px 7px;
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       PROJECTS / PORTFOLIO
+       ===================================================== */
+
+    #portfolio {
+        padding-top: 45px;
+        margin-top: 0;
+        overflow: hidden;
+    }
+
+    .portSection {
+        padding: 0 16px;
+    }
+
+    .portSection h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        margin: 0 0 12px;
+    }
+
+    .portSection h1 span {
+        font-size: 36px;
+    }
+
+    .portSection p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* ---------- PROJECT CARDS ---------- */
+
+    .work-content {
+        width: 100%;
+        margin: 25px 0 35px;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .work-card {
+        width: 100%;
+        display: block;
+    }
+
+    .wcard1,
+    .wcard2,
+    .wcard3 {
+        width: 100%;
+        max-width: 100%;
+        padding: 17px;
+        border-radius: 14px;
+    }
+
+    .work-content .icon-content svg {
+        margin: 0 0 10px;
+        padding: 9px;
+    }
+
+    .wcard1 h1,
+    .wcard2 h1,
+    .wcard3 h1 {
+        font-size: 21px;
+        margin: 0 0 8px;
+    }
+
+    .wcard1 p,
+    .wcard2 p,
+    .wcard3 p {
+        font-size: 13px;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .workList {
+        padding-left: 20px;
+    }
+
+    .workList li {
+        font-size: 13px;
+        line-height: 1.7rem;
+        margin: 0;
+    }
+
+    .wText {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 12px;
+    }
+
+    .wText span {
+        line-height: normal;
+        font-size: 10px;
+        margin: 0;
+        padding: 5px 7px;
+    }
+
+    .wsym {
+        margin-top: 15px;
+    }
+
+    .wsym a {
+        height: auto;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .work-para {
+        width: calc(100% - 32px);
+        max-width: none;
+        margin: 20px 16px 40px;
+        padding: 18px;
+    }
+
+    .work-para h2 {
+        font-size: 19px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .work-para p {
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    .work-list {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .work-list span {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+
+    /* =====================================================
+       CONTACT / GET IN TOUCH
+       ===================================================== */
+
+    #contact {
+        padding-top: 45px;
+        margin-top: 0;
+        overflow: hidden;
+    }
+
+    .cont-section {
+        width: 100%;
+        margin: 0;
+        padding: 0 16px;
+    }
+
+    .cont-section h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        margin: 0 0 12px;
+    }
+
+    .cont-section h1 span {
+        font-size: 36px;
+    }
+
+    .cont-section p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* ---------- CONTACT CONTAINER ---------- */
+
+    .contact-container {
+        width: 100%;
+        margin: 25px 0 0;
+        padding: 0 16px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    /* ---------- FORM ---------- */
+
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .contact-form h2 {
+        font-size: 20px;
+        margin: 0 0 18px;
+    }
+
+    .form-head {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        width: 100%;
+        margin-top: 7px;
+        margin-bottom: 14px;
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    textarea {
+        min-height: 110px;
     }
 
     button {
-        padding: 12px 20px;
-        font-size: 16px;
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px;
+        font-size: 14px;
     }
 
-    img {
+
+    /* ---------- CONTACT INFO ---------- */
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info .cont1 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 17px;
+        border-radius: 14px;
+    }
+
+    .cont1 h3 {
+        font-size: 19px;
+        margin: 0 0 12px;
+    }
+
+    .cont-email,
+    .cont-phone {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .cont-email .icon-container,
+    .cont-phone .icon-container {
+        width: 42px;
+        height: 42px;
+        margin: 0;
+    }
+
+    .cont-email .icon-container svg,
+    .cont-phone .icon-container svg {
+        padding: 10px;
+    }
+
+    h4 {
+        margin: -38px 0 0 57px;
+        font-size: 14px;
+    }
+
+    .cont-email p,
+    .cont-phone p {
+        margin: 4px 0 0 57px;
+        font-size: 12px;
+    }
+
+
+    /* ---------- ONLINE SECTION ---------- */
+
+    .online-section {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0 0;
+        padding: 15px;
+        border-radius: 14px;
+    }
+
+    .online-section h2 {
+        font-size: 18px;
+        margin: 0 0 10px;
+    }
+
+    .online-links {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+
+    .online-item {
+        width: 100%;
+        height: auto;
+        padding: 7px;
+        gap: 8px;
+        border-radius: 8px;
+    }
+
+    .icon1 {
+        width: 34px;
+        height: 34px;
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    .online-text .title {
+        font-size: 12px;
+        margin: 2px 0;
+    }
+
+    .online-text .subtitle {
+        font-size: 10px;
+        margin: 0;
+    }
+
+
+    /* ---------- COLLABORATION ---------- */
+
+    .collab {
+        width: 100%;
         max-width: 100%;
         height: auto;
+        margin: 15px 0 0;
+        padding: 18px;
+        border-radius: 14px;
     }
 
-    .typing-animation{
-        max-width: 75%;
+    .collab h3 {
+        font-size: 18px;
+        margin: 0 0 8px;
     }
-   .serv-content, .work-card,.contact-container, .footer-container {
-    flex-direction: column;
-    align-items: center; 
-  }
 
-  .card3, .card4 {
-    width: 100%; 
-  }
-  form{
-    width: 100%;
-  }
-  .contact-info .cont1, .online-section{
-    width: 80%;
-    margin-left: 70px;
-  } 
-   .social-links {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-links {
-    margin-left: -320px;
-  }
-  .footer-contact{
-    margin-left: -180px;
-  }
+    .collab p {
+        width: 100%;
+        padding: 0;
+        margin: 0 0 15px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .collab a {
+        display: block;
+        width: fit-content;
+        max-width: none;
+        margin: 0 auto;
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footer-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer h2,
+    .footer-about p,
+    .social-icons,
+    .footer-links h4,
+    .footer-title,
+    .footer-links ul,
+    .footer-cont h4,
+    .footer-contact p {
+        margin-left: 0;
+    }
+
+    .footer h2 {
+        margin-top: 0;
+    }
+
+    .line hr,
+    .hr hr {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .footer-bottom p {
+        margin: 20px 0 0;
+        text-align: center;
+        font-size: 12px;
+    }
 }
